@@ -7,13 +7,13 @@
   }
 
   const faqs: FAQItem[] = [
-    { question: "Do I have to trust the lead investor with my investment?", answer: "Details about trust and lead investors..." },
-    { question: "How does Echo work?", answer: "Echo works by connecting..." },
-    { question: "I want to share my deals. Can I start a group?", answer: "Yes, you can start a group by..." },
-    { question: "I'm a founder. How do I raise money from Echo?", answer: "Founders can raise money by..." },
-    { question: "Is everyone eligible to use Echo?", answer: "Eligibility depends on..." },
-    { question: "Why do founders raise from Echo groups?", answer: "Founders choose Echo because..." },
-    { question: "Why would someone share their deals with me?", answer: "Sharing deals allows for..." }
+    { question: "How does on-chain monitoring differ from local monitoring?", answer: "Local monitoring tools check your node from the inside-out, verifying that your software is running. Roundbeat monitors from the outside-in, checking what the network consensus actually sees. This catches silent P2P failures, network partitions, and other issues that your local node might not detect." },
+    { question: "Do I need to install anything on my validator?", answer: "No. Roundbeat is completely agent-free. We connect directly to blockchain nodes and verify your validator's participation through on-chain consensus data. No installation, no firewall configuration, no maintenance required." },
+    { question: "Which blockchains do you support?", answer: "We're currently live on Canton, Aztec, and Celestia networks. We're actively expanding to Ethereum, Cosmos Hub, Solana, Polygon, Avalanche, and Near. Each network integration tracks network-specific metrics like proof validity, topology sync, and data availability." },
+    { question: "What happens when Roundbeat detects an issue?", answer: "You'll receive instant alerts through your preferred channels—email, Slack, Telegram, or PagerDuty for enterprise customers. Alerts include specific details about what the network is seeing, helping you diagnose issues faster." },
+    { question: "Can I compare my validator's performance to others?", answer: "Yes. Pro and Enterprise tiers include benchmarking features that compare your validator's performance against the top 10% of the network, helping you identify optimization opportunities." },
+    { question: "What's included in the free tier?", answer: "The free tier monitors 1 validator with 5-minute checks, email notifications, and 24-hour data retention. It's perfect for individual validators who want to try on-chain monitoring without commitment." },
+    { question: "How do public status pages work?", answer: "Pro and Enterprise customers can create public status pages that prove validator reliability to delegators. These pages show uptime metrics and performance data, building trust with your community." }
   ];
 
   let openIndex: number | null = null;
@@ -29,7 +29,7 @@
       <h2 class="font-serif text-4xl text-gray-900 mb-6">
         Frequently asked questions
       </h2>
-      <a href="/" class="text-sm text-gray-900 border-b border-gray-300 pb-0.5 hover:border-black transition-colors">See all support</a>
+      <a href="mailto:support@roundbeat.io" class="text-sm text-gray-900 border-b border-gray-300 pb-0.5 hover:border-black transition-colors">Contact support</a>
     </div>
     
     <div class="lg:col-span-8">
